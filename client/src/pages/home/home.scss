@@ -1,0 +1,15 @@
+@import '../../style.scss';
+
+.home{
+    @include themify($themes){
+    overflow-y: auto;
+    background-color: themed('bgSoft');
+    padding: 20px 10px 20px 25px;
+
+    @include mobile{
+        padding: 7px;
+    }
+    @include tablet{
+        padding: 14px;
+    }
+}}
